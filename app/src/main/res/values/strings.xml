@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Tes Buta Warna</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_welcome_splash">Welcome</string>
+    <string name="title_activity_mulai">MulaiActivity</string>
+    <string name="title_activity_hasil">HasilActivity</string>
+    <string name="title_activity_petunjuk">PetunjukActivity</string>
+    <string name="title_activity_artikel">ArtikelActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="teks_artikel"><b> DEFINISI </b> \n\nButa warna merupakan ketidakmampuan
+        seseorang untuk membedakan warna tertentu. Orang tersebut biasanya tidak buta semua warna melainkan
+        warna-warna tertentu saja. Meskipun demikian ada juga orang yang sama sekali tidak bisa melihat warna
+        jadi hanya tampak sebagai hitam, putih dan abu abu saja. Normalnya, sel kerucut (cone) di retina mata mempunyai
+        spektrum terhadap tiga warna dasar, yaitu merah,hijau dan biru. Pada orang yang mempunyai sel-sel kerucut yang sensitif
+        untuk tiga jenis warna ini, maka ia dikatakan normal. Pada orang tertentu, mungkin hanya ada dua atau bahkan satu
+        atau tidak ada sel kerucut yang sensitif terhadap warna-warna tersebut. Pada kasus ini orang tersebut disebut buta warna.
+
+        \n\n\n <b> TIPE-TIPE BUTA WARNA</b>
+        \n\n • Buta warna total,merupakan sebuah keadaan dimana seseorang tidak dapat mengenali warna sama sekali
+        (semua warna dilihat sebagai tingkatan warna hitam, putih, dan abu-abu).
+        \n\n • Buta warna tertentu atau dikenal dengan istilah buta warna parsial (ketidak mampuan untuk membedakan warna-warna merah
+        dan hijau). Dalam kasus buta warna parsial ini dibagi dalam 3 tipe, yaitu:
+        Deutrinophia, yaitu orang yang kehilangan kerucut hijau sehingga ia tidak dapat melihat warna hijau,
+        Protanophia, yaitu orang yang kehilangan kerucut merah sehingga ia buta warna merah,
+        Tritanophia, yaitu kondisi yang ditandai oleh ketidak beresan dalam warna biru dan kuning dimana conus biru
+        atau kuning tidak peka terhadap suatu daerah spektrum visual
+
+        \n\n\n <b> PENYEBAB BUTA WARNA </b> \n\n
+        Ada beberapa penyebab seseorang mengalami buta warna, di antaranya adalah:\n
+        • Penyakit,  seperti penyakit Parkinson, penyakit Alzheimer, glaukoma, neuritis optik, leukemia, diabetes,
+        pecandu alkohol kronis, macular degeneration, dan anemia sel sabit.\n
+        • Usia.\n
+        • Faktor genetika.\n
+        • Bahan kimia.\n
+        • Efek samping pengobatan tertentu. Beberapa pengobatan berpotensi menyebabkan buta warna, seperti digoxin,
+        pheytoin, chloroquine dan sildenafil yang juga dikenal sebagai Viagra. Jika gangguan disebabkan oleh pengobatan,
+        biasanya pandangan akan kembali normal setelah berhenti mengonsumsi obat.
+
+
+        </string>
+
+    <string name="teks_petunjuk"><b> Petunjuk Penggunaan</b>
+    \n\n Aplikasi Colour BlindnessTes tini merupakan aplikasi untuk mengetes kemampuan mata untuk mengidentifikasi berbagai jenis warna.
+        Pilih mulai untuk memulai tes sehingga muncul gambar.
+        Masukkan angka yang Anda lihat kemudian masukkan pada box jawaban dan tekan lanjut.
+        </string>
+    <string name="title_activity_soal2">Soal2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_soal3">Soal3</string>
+
+</resources>
