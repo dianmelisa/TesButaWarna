@@ -49,11 +49,11 @@ public class Soal3 extends ActionBarActivity {
 
         if (periksaAns3 == 6){
             pointHasil = 1;
-            hasilIntent.putExtra("pointHasil",pointHasil);
+            hasilIntent.putExtra("pointHasil3",pointHasil);
 
         }else {
             pointHasil = 0;
-            hasilIntent.putExtra("Jawaban", pointHasil);
+            hasilIntent.putExtra("pointHasil3", pointHasil);
         }
         startActivity(hasilIntent);
     }

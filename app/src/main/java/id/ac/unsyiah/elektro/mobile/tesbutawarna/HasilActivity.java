@@ -15,6 +15,7 @@ public class HasilActivity extends ActionBarActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,10 +23,27 @@ public class HasilActivity extends ActionBarActivity {
 
 
         Intent hasilIntent = getIntent();
-        String hasilStr = hasilIntent.getStringExtra("pointHasil");
+        String hasilStr1 = hasilIntent.getStringExtra("pointHasil1");
+        String hasilStr2 = hasilIntent.getStringExtra("pointHasil2");
+        String hasilStr3 = hasilIntent.getStringExtra("pointHasil3");
 
         TextView hasilView = (TextView) findViewById(R.id.txtHasil);
-        hasilView.setText(hasilStr);
+        int angka1 = Integer.valueOf(String.valueOf(hasilStr1));
+        int angka2 = Integer.valueOf(String.valueOf(hasilStr2));
+        int angka3 = Integer.valueOf(String.valueOf(hasilStr3));
+        int total = angka1 + angka2 + angka3;
+
+        String pesan;
+
+        if(total >= 2){
+            pesan = "Tidak Buta Warna";
+
+        }
+        else {
+            pesan = "Penglihatan Terganggu";
+        }
+        hasilView.setText(pesan);
+
     }
 
 

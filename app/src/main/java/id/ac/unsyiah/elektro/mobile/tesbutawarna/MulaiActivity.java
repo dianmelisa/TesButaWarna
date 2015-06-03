@@ -53,11 +53,11 @@ public class MulaiActivity extends ActionBarActivity {
 
         if (periksaAns1 == 12){
             pointHasil = 1;
-            hasilIntent.putExtra("pointHasil",pointHasil);
+            hasilIntent.putExtra("pointHasil1",pointHasil);
 
         }else {
             pointHasil = 0;
-            hasilIntent.putExtra("Jawaban", pointHasil);
+            hasilIntent.putExtra("pointHasil1", pointHasil);
         }
         startActivity(hasilIntent);
     }
