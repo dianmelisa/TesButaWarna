@@ -1,6 +1,6 @@
 package id.ac.unsyiah.elektro.mobile.tesbutawarna;
 
-import android.app.Activity;
+
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -14,28 +14,33 @@ public class HasilActivity extends ActionBarActivity {
 
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hasil);
 
-
         Intent hasilIntent = getIntent();
-        String hasilStr1 = hasilIntent.getStringExtra("pointHasil1");
-        String hasilStr2 = hasilIntent.getStringExtra("pointHasil2");
-        String hasilStr3 = hasilIntent.getStringExtra("pointHasil3");
+        Integer hasilStr1 = hasilIntent.getIntExtra("pointHasil1",1);
+        Integer hasilStr2 = hasilIntent.getIntExtra("pointHasil2",1);
+        Integer hasilStr3 = hasilIntent.getIntExtra("pointHasil3",1);
+        Integer hasilStr4 = hasilIntent.getIntExtra("pointHasil4",1);
+        Integer hasilStr5 = hasilIntent.getIntExtra("pointHasil5",1);
+        Integer hasilStr6 = hasilIntent.getIntExtra("pointHasil6",1);
+        Integer hasilStr7 = hasilIntent.getIntExtra("pointHasil7",1);
+        Integer hasilStr8 = hasilIntent.getIntExtra("pointHasil8",1);
+        Integer hasilStr9 = hasilIntent.getIntExtra("pointHasil9",1);
+        Integer hasilStr10 = hasilIntent.getIntExtra("pointHasil10",1);
+        Integer hasilStr11 = hasilIntent.getIntExtra("pointHasil11",1);
+
+
 
         TextView hasilView = (TextView) findViewById(R.id.txtHasil);
-        int angka1 = Integer.valueOf(String.valueOf(hasilStr1));
-        int angka2 = Integer.valueOf(String.valueOf(hasilStr2));
-        int angka3 = Integer.valueOf(String.valueOf(hasilStr3));
-        int total = angka1 + angka2 + angka3;
+        int total = hasilStr1 + hasilStr2  + hasilStr3 + hasilStr4 + hasilStr5
+                + hasilStr6 +hasilStr7 + hasilStr8 + hasilStr9 + hasilStr10 + hasilStr11;
 
         String pesan;
 
-        if(total >= 2){
+        if(total >= 7){
             pesan = "Tidak Buta Warna";
 
         }
@@ -68,4 +73,8 @@ public class HasilActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
+
 }

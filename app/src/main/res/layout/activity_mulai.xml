@@ -10,10 +10,10 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NEXT"
+        android:text="Next"
         android:id="@+id/btnNext"
         android:layout_marginBottom="65dp"
-        android:onClick="onClick"
+        android:onClick="onClickBtnNext1"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
@@ -22,16 +22,16 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/editTextInput"
+        android:id="@+id/et"
         android:layout_above="@+id/btnNext"
         android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/angka1"
+        android:id="@+id/gambarAngka"
         android:src="@drawable/angka1"
         android:layout_alignParentTop="true"
-        android:layout_above="@+id/editTextInput" />
+        android:layout_above="@+id/et" />
 
 </RelativeLayout>

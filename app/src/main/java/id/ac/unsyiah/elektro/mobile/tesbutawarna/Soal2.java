@@ -11,6 +11,8 @@ import android.widget.EditText;
 
 public class Soal2 extends ActionBarActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,20 +41,23 @@ public class Soal2 extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void onClick(View v) {
-        EditText periksaAnsTxt = (EditText) findViewById(R.id.editTextInput);
+    public void onClickBtnNext2(View v) {
+        EditText periksaAnsTxt = (EditText) findViewById(R.id.et);
 
-        int periksaAns2 = Integer.valueOf(String.valueOf(periksaAnsTxt.getText().toString()));
+        int periksaAns = Integer.valueOf(periksaAnsTxt.getText().toString());
         Intent hasilIntent = new Intent(this, Soal3.class);
+       // final String mulaiValue = getIntent().getStringExtra("pointHasil1");
         int pointHasil;
 
-        if (periksaAns2 == 8){
+        if (periksaAns == 8){
             pointHasil = 1;
             hasilIntent.putExtra("pointHasil2",pointHasil);
+          //  hasilIntent.putExtra("pointHasil1",mulaiValue);
 
         }else {
             pointHasil = 0;
             hasilIntent.putExtra("pointHasil2", pointHasil);
+          //  hasilIntent.putExtra("pointHasil1",mulaiValue);
         }
         startActivity(hasilIntent);
     }

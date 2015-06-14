@@ -6,14 +6,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.TranslateAnimation;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 
 
 public class MulaiActivity extends ActionBarActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,14 +41,14 @@ public class MulaiActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void onClick(View v) {
-        EditText periksaAnsTxt = (EditText) findViewById(R.id.editTextInput);
+    public void onClickBtnNext1(View v) {
+        EditText periksaAnsTxt = (EditText) findViewById(R.id.et);
 
-        int periksaAns1 = Integer.valueOf(String.valueOf(periksaAnsTxt.getText().toString()));
+        int periksaAns = Integer.valueOf(periksaAnsTxt.getText().toString());
         Intent hasilIntent = new Intent(this, Soal2.class);
         int pointHasil;
 
-        if (periksaAns1 == 12){
+        if (periksaAns == 12){
             pointHasil = 1;
             hasilIntent.putExtra("pointHasil1",pointHasil);
 

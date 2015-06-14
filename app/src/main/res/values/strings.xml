@@ -50,5 +50,23 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_soal3">Soal3</string>
+    <string name="title_activity_end_soal">EndSoal</string>
+    <string name="title_activity_soal5">Soal5</string>
+    <string name="title_activity_soal6">Soal6</string>
+    <string name="title_activity_soal7">Soal7</string>
+    <string name="title_activity_soal8">Soal8</string>
+    <string name="title_activity_soal9">Soal9</string>
+    <string name="title_activity_soal10">Soal10</string>
+    <string name="title_activity_soal11">Soal11</string>
+    <string name="title_activity_soal12">Soal12</string>
+    <string name="title_activity_soal14">Soal14</string>
+    <string name="title_activity_soal13">Soal13</string>
+    <string name="title_activity_soal15">Soal15</string>
+    <string name="title_activity_soal16">Soal16</string>
+    <string name="title_activity_soal17">Soal17</string>
+    <string name="title_activity_soal18">Soal18</string>
+    <string name="title_activity_soal19">Soal19</string>
+    <string name="title_activity_soal20">Soal20</string>
+    <string name="title_activity_soal4">Soal4</string>
 
 </resources>

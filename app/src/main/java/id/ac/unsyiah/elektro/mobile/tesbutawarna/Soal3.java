@@ -11,10 +11,12 @@ import android.widget.EditText;
 
 public class Soal3 extends ActionBarActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_soal3);
+
     }
 
 
@@ -40,20 +42,23 @@ public class Soal3 extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void onClick(View v) {
-        EditText periksaAnsTxt = (EditText) findViewById(R.id.editTextInput);
+    public void onClickBtnNext3(View v) {
+        EditText periksaAnsTxt = (EditText) findViewById(R.id.et);
 
-        int periksaAns3 = Integer.valueOf(String.valueOf(periksaAnsTxt.getText().toString()));
-        Intent hasilIntent = new Intent(this, HasilActivity.class);
+        int periksaAns = Integer.valueOf(periksaAnsTxt.getText().toString());
+        Intent hasilIntent = new Intent(this, Soal4.class);
+        // final String mulaiValue = getIntent().getStringExtra("pointHasil1");
         int pointHasil;
 
-        if (periksaAns3 == 6){
+        if (periksaAns == 6){
             pointHasil = 1;
             hasilIntent.putExtra("pointHasil3",pointHasil);
+            //  hasilIntent.putExtra("pointHasil1",mulaiValue);
 
         }else {
             pointHasil = 0;
             hasilIntent.putExtra("pointHasil3", pointHasil);
+            //  hasilIntent.putExtra("pointHasil1",mulaiValue);
         }
         startActivity(hasilIntent);
     }

@@ -48,6 +48,78 @@
             android:name=".Soal3"
             android:label="@string/title_activity_soal3" >
         </activity>
+        <activity
+            android:name=".EndSoal"
+            android:label="@string/title_activity_end_soal" >
+        </activity>
+        <activity
+            android:name=".Soal5"
+            android:label="@string/title_activity_soal5" >
+        </activity>
+        <activity
+            android:name=".Soal6"
+            android:label="@string/title_activity_soal6" >
+        </activity>
+        <activity
+            android:name=".Soal7"
+            android:label="@string/title_activity_soal7" >
+        </activity>
+        <activity
+            android:name=".Soal8"
+            android:label="@string/title_activity_soal8" >
+        </activity>
+        <activity
+            android:name=".Soal9"
+            android:label="@string/title_activity_soal9" >
+        </activity>
+        <activity
+            android:name=".Soal10"
+            android:label="@string/title_activity_soal10" >
+        </activity>
+        <activity
+            android:name=".Soal11"
+            android:label="@string/title_activity_soal11" >
+        </activity>
+        <activity
+            android:name=".Soal12"
+            android:label="@string/title_activity_soal12" >
+        </activity>
+        <activity
+            android:name=".Soal14"
+            android:label="@string/title_activity_soal14" >
+        </activity>
+        <activity
+            android:name=".Soal13"
+            android:label="@string/title_activity_soal13" >
+        </activity>
+        <activity
+            android:name=".Soal15"
+            android:label="@string/title_activity_soal15" >
+        </activity>
+        <activity
+            android:name=".Soal16"
+            android:label="@string/title_activity_soal16" >
+        </activity>
+        <activity
+            android:name=".Soal17"
+            android:label="@string/title_activity_soal17" >
+        </activity>
+        <activity
+            android:name=".Soal18"
+            android:label="@string/title_activity_soal18" >
+        </activity>
+        <activity
+            android:name=".Soal19"
+            android:label="@string/title_activity_soal19" >
+        </activity>
+        <activity
+            android:name=".Soal20"
+            android:label="@string/title_activity_soal20" >
+        </activity>
+        <activity
+            android:name=".Soal4"
+            android:label="@string/title_activity_soal4" >
+        </activity>
     </application>
 
 </manifest>
