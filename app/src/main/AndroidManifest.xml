@@ -49,8 +49,8 @@
             android:label="@string/title_activity_soal3" >
         </activity>
         <activity
-            android:name=".EndSoal"
-            android:label="@string/title_activity_end_soal" >
+            android:name=".Soal4"
+            android:label="@string/title_activity_soal4" >
         </activity>
         <activity
             android:name=".Soal5"
@@ -116,10 +116,7 @@
             android:name=".Soal20"
             android:label="@string/title_activity_soal20" >
         </activity>
-        <activity
-            android:name=".Soal4"
-            android:label="@string/title_activity_soal4" >
-        </activity>
+
     </application>
 
 </manifest>
