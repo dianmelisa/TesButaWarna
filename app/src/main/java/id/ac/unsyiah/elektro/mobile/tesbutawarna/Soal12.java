@@ -36,4 +36,8 @@ public class Soal12 extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void onBackPressed(){
+        return ;
+    }
 }

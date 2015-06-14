@@ -56,5 +56,9 @@ public class Soal5 extends ActionBarActivity {
             hasilIntent.putExtra("pointHasil5", pointHasil);
         }
         startActivity(hasilIntent);
+        finish();
+    }
+    public void onBackPressed(){
+        return ;
     }
 }

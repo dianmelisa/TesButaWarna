@@ -14,7 +14,7 @@
         android:src="@drawable/btn_mulai"
         android:layout_above="@+id/btnPetunjuk"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="42dp"
+        android:layout_marginBottom="20dp"
         android:clickable="true"
         android:onClick="klikBtnMulai" />
 
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnArtikel"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/btn_artikel"
         android:layout_below="@+id/btnPetunjuk"
         android:layout_alignLeft="@+id/btnMulai"

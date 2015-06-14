@@ -57,6 +57,7 @@ public class MulaiActivity extends ActionBarActivity {
             hasilIntent.putExtra("pointHasil1", pointHasil);
         }
         startActivity(hasilIntent);
+        finish();
     }
 }
 

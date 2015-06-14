@@ -40,11 +40,11 @@ public class HasilActivity extends ActionBarActivity {
         String pesan;
 
         if(total >= 7){
-            pesan = "Tidak Buta Warna";
+            pesan = "Alhamdulillah, Penglihatan Anda Normal";
 
         }
         else {
-            pesan = "Penglihatan Terganggu";
+            pesan = "Maaf, Penglihatan Anda Terganggu";
         }
         hasilView.setText(pesan);
 
