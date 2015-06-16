@@ -29,7 +29,7 @@
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/angka3"
+        android:id="@+id/gambarAngka"
         android:src="@drawable/angka10"
         android:layout_alignParentTop="true"
         android:layout_above="@+id/et" />

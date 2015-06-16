@@ -30,21 +30,31 @@ public class HasilActivity extends ActionBarActivity {
         Integer hasilStr9 = hasilIntent.getIntExtra("pointHasil9",1);
         Integer hasilStr10 = hasilIntent.getIntExtra("pointHasil10",1);
         Integer hasilStr11 = hasilIntent.getIntExtra("pointHasil11",1);
+        Integer hasilStr12 = hasilIntent.getIntExtra("pointHasil12",1);
+        Integer hasilStr13 = hasilIntent.getIntExtra("pointHasil13",1);
+        Integer hasilStr14 = hasilIntent.getIntExtra("pointHasil14",1);
+        Integer hasilStr15 = hasilIntent.getIntExtra("pointHasil15",1);
+        Integer hasilStr16 = hasilIntent.getIntExtra("pointHasil16",1);
+        Integer hasilStr17 = hasilIntent.getIntExtra("pointHasil17",1);
 
 
 
         TextView hasilView = (TextView) findViewById(R.id.txtHasil);
         int total = hasilStr1 + hasilStr2  + hasilStr3 + hasilStr4 + hasilStr5
-                + hasilStr6 +hasilStr7 + hasilStr8 + hasilStr9 + hasilStr10 + hasilStr11;
+                + hasilStr6 +hasilStr7 + hasilStr8 + hasilStr9 + hasilStr10 + hasilStr11+ hasilStr12+ hasilStr13
+                + hasilStr14+ hasilStr15+ hasilStr16+ hasilStr17;
 
         String pesan;
 
-        if(total >= 7){
+        if(total > 15){
             pesan = "Alhamdulillah, Penglihatan Anda Normal";
+
+        /*}else if (total >3  && total <15){
+            pesan="Maaf, Penglihatan Anda Terganggu";*/
 
         }
         else {
-            pesan = "Maaf, Penglihatan Anda Terganggu";
+            pesan = "Maaf, Anda Terdeteksi Buta Warna Total";
         }
         hasilView.setText(pesan);
 

@@ -1,9 +1,12 @@
 package id.ac.unsyiah.elektro.mobile.tesbutawarna;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 
 
 public class Soal12 extends ActionBarActivity {
@@ -37,7 +40,24 @@ public class Soal12 extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void onClickBtnNext12(View v) {
+        EditText periksaAnsTxt = (EditText) findViewById(R.id.et);
+
+        int periksaAns2 = Integer.valueOf(periksaAnsTxt.getText().toString());
+        Intent hasilIntent = new Intent(this, Soal13.class);
+        int pointHasil;
+
+        if (periksaAns2 == 97){
+            pointHasil = 1;
+            hasilIntent.putExtra("pointHasil12",pointHasil);
+
+        }else {
+            pointHasil = 0;
+            hasilIntent.putExtra("pointHasil12", pointHasil);
+        }
+        startActivity(hasilIntent);
+        finish();
+    }
     public void onBackPressed(){
-        return ;
     }
 }

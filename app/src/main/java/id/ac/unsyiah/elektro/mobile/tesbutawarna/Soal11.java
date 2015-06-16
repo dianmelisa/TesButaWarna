@@ -44,7 +44,7 @@ public class Soal11 extends ActionBarActivity {
         EditText periksaAnsTxt = (EditText) findViewById(R.id.et);
 
         int periksaAns2 = Integer.valueOf(periksaAnsTxt.getText().toString());
-        Intent hasilIntent = new Intent(this, HasilActivity.class);
+        Intent hasilIntent = new Intent(this, Soal12.class);
         int pointHasil;
 
         if (periksaAns2 == 6){
@@ -59,6 +59,5 @@ public class Soal11 extends ActionBarActivity {
         finish();
     }
     public void onBackPressed(){
-        return ;
     }
 }
