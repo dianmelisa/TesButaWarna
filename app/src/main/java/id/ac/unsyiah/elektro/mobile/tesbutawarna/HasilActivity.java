@@ -19,23 +19,6 @@ public class HasilActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hasil);
 
-        /*Integer hasilStr2 = hasilIntent.getIntExtra("pointHasil2",1);
-        Integer hasilStr3 = hasilIntent.getIntExtra("pointHasil3",1);
-        Integer hasilStr4 = hasilIntent.getIntExtra("pointHasil4",1);
-        Integer hasilStr5 = hasilIntent.getIntExtra("pointHasil5",1);
-        Integer hasilStr6 = hasilIntent.getIntExtra("pointHasil6",1);
-        Integer hasilStr7 = hasilIntent.getIntExtra("pointHasil7",1);
-        Integer hasilStr8 = hasilIntent.getIntExtra("pointHasil8",1);
-        Integer hasilStr9 = hasilIntent.getIntExtra("pointHasil9",1);
-        Integer hasilStr10 = hasilIntent.getIntExtra("pointHasil10",1);
-        Integer hasilStr11 = hasilIntent.getIntExtra("pointHasil11",1);
-        Integer hasilStr12 = hasilIntent.getIntExtra("pointHasil12",1);
-        Integer hasilStr13 = hasilIntent.getIntExtra("pointHasil13",1);
-        Integer hasilStr14 = hasilIntent.getIntExtra("pointHasil14",1);
-        Integer hasilStr15 = hasilIntent.getIntExtra("pointHasil15",1);
-        Integer hasilStr16 = hasilIntent.getIntExtra("pointHasil16",1);
-        Integer hasilStr17 = hasilIntent.getIntExtra("pointHasil17",1);*/
-
 
         Intent hasilIntent = getIntent();
         Integer hasilNormal1 = hasilIntent.getIntExtra("hasilBNormal1",0);
@@ -78,31 +61,20 @@ public class HasilActivity extends ActionBarActivity {
 
 
 
-        float bNormal = (hasilNormal1 + hasilNormal2 + hasilNormal3 + hasilNormal4 + hasilNormal5
-                + hasilNormal6 + hasilNormal7 + hasilNormal8 + hasilNormal9 + hasilNormal10)/10 *100;
+        double bNormal = (hasilNormal1 + hasilNormal2 + hasilNormal3 + hasilNormal4 + hasilNormal5
+                + hasilNormal6 + hasilNormal7 + hasilNormal8 + hasilNormal9 + hasilNormal10)*10;
         String bNormalStr = String.valueOf(bNormal);
 
-        float bMerahHijau = (hasilMerahHijau1 + hasilMerahHijau2 +  hasilMerahHijau3 +  hasilMerahHijau4 +
+        double bMerahHijau = (hasilMerahHijau1 + hasilMerahHijau2 +  hasilMerahHijau3 +  hasilMerahHijau4 +
                 hasilMerahHijau5 +  hasilMerahHijau6 + hasilMerahHijau7 + hasilMerahHijau8 + hasilMerahHijau9 +
-                hasilMerahHijau10 )/10*100;
+                hasilMerahHijau10 )*10;
         String bMerahHijauStr = String.valueOf(bMerahHijau);
 
-        float bTotal = (hasilTotal1 + hasilTotal2 + hasilTotal3 + hasilTotal4 + hasilTotal5 + hasilTotal6 +
-                hasilTotal7 + hasilTotal8 + hasilTotal9 + hasilTotal10)/10*100;
+        double bTotal = (hasilTotal1 + hasilTotal2 + hasilTotal3 + hasilTotal4 + hasilTotal5 + hasilTotal6 +
+                hasilTotal7 + hasilTotal8 + hasilTotal9 + hasilTotal10)*10;
         String bTotalStr = String.valueOf(bTotal);
 
-        /*String pesan;
 
-        if(total > 15){
-            pesan = "Alhamdulillah, Penglihatan Anda Normal";
-
-        *//*}else if (total >3  && total <15){
-            pesan="Maaf, Penglihatan Anda Terganggu";*//*
-
-        }
-        else {
-            pesan = "Maaf, Anda Terdeteksi Buta Warna Total";
-        }*/
         hasilNormalView.setText("Normal : " + bNormalStr + '%');
         hasilMerahHijauView.setText("Buta Warna Merah + Hijau : " + bMerahHijauStr + '%');
         hasilTotalView.setText("Buta Warna Total : " + bTotalStr + '%');
@@ -132,7 +104,10 @@ public class HasilActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    
+    public void onClickBacktoMenu(View v){
+        Intent intentToMenu = new Intent(this, MainActivity.class);
+        startActivity(intentToMenu);
+    }
 
 
 
