@@ -47,18 +47,31 @@ public class Soal3 extends ActionBarActivity {
 
         int periksaAns = Integer.valueOf(periksaAnsTxt.getText().toString());
         Intent hasilIntent = new Intent(this, Soal4.class);
-        // final String mulaiValue = getIntent().getStringExtra("pointHasil1");
-        int pointHasil;
+
+        hasilIntent.putExtra("hasilBNormal1", getIntent().getIntExtra("hasilBNormal1", 0));
+        hasilIntent.putExtra("hasilBTotal1", getIntent().getIntExtra("hasilBTotal1", 0));
+        hasilIntent.putExtra("hasilBMerahHijau1",getIntent().getIntExtra("hasilBMerahHijau1",0));
+        hasilIntent.putExtra("hasilBNormal2", getIntent().getIntExtra("hasilBNormal2", 0));
+        hasilIntent.putExtra("hasilBTotal2", getIntent().getIntExtra("hasilBTotal2", 0));
+        hasilIntent.putExtra("hasilBMerahHijau2",getIntent().getIntExtra("hasilBMerahHijau2",0));
+
+        int hasilBNormal = 0;
+        int hasilBMerahHijau = 0;
+        int hasilBTotal = 0;
+
 
         if (periksaAns == 6){
-            pointHasil = 1;
-            hasilIntent.putExtra("pointHasil3",pointHasil);
-            //  hasilIntent.putExtra("pointHasil1",mulaiValue);
+            hasilBNormal = (1+hasilBNormal);
+            hasilIntent.putExtra("hasilBNormal3",hasilBNormal);
+
+
+        }else if (periksaAns == 5){
+            hasilBMerahHijau = (1+hasilBMerahHijau);
+            hasilIntent.putExtra("hasilBMerahHijau3", hasilBMerahHijau);
 
         }else {
-            pointHasil = 0;
-            hasilIntent.putExtra("pointHasil3", pointHasil);
-            //  hasilIntent.putExtra("pointHasil1",mulaiValue);
+            hasilBTotal = (1+hasilBTotal);
+            hasilIntent.putExtra("hasilTotal3", hasilBTotal);
         }
         startActivity(hasilIntent);
         finish();

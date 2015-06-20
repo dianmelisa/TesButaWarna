@@ -45,15 +45,38 @@ public class Soal5 extends ActionBarActivity {
 
         int periksaAns = Integer.valueOf(periksaAnsTxt.getText().toString());
         Intent hasilIntent = new Intent(this, Soal6.class);
-        int pointHasil;
+
+        hasilIntent.putExtra("hasilBNormal1", getIntent().getIntExtra("hasilBNormal1", 0));
+        hasilIntent.putExtra("hasilBTotal1", getIntent().getIntExtra("hasilBTotal1", 0));
+        hasilIntent.putExtra("hasilBMerahHijau1",getIntent().getIntExtra("hasilBMerahHijau1",0));
+        hasilIntent.putExtra("hasilBNormal2", getIntent().getIntExtra("hasilBNormal2", 0));
+        hasilIntent.putExtra("hasilBTotal2", getIntent().getIntExtra("hasilBTotal2", 0));
+        hasilIntent.putExtra("hasilBMerahHijau2",getIntent().getIntExtra("hasilBMerahHijau2",0));
+        hasilIntent.putExtra("hasilBNormal3", getIntent().getIntExtra("hasilBNormal3", 0));
+        hasilIntent.putExtra("hasilBTotal3", getIntent().getIntExtra("hasilBTotal3", 0));
+        hasilIntent.putExtra("hasilBMerahHijau3",getIntent().getIntExtra("hasilBMerahHijau3",0));
+        hasilIntent.putExtra("hasilBNormal4", getIntent().getIntExtra("hasilBNormal4", 0));
+        hasilIntent.putExtra("hasilBTotal4", getIntent().getIntExtra("hasilBTotal4", 0));
+        hasilIntent.putExtra("hasilBMerahHijau4",getIntent().getIntExtra("hasilBMerahHijau4",0));
+
+
+        int hasilBNormal = 0;
+        int hasilBMerahHijau = 0;
+        int hasilBTotal = 0;
+
 
         if (periksaAns == 57){
-            pointHasil = 1;
-            hasilIntent.putExtra("pointHasil5",pointHasil);
+            hasilBNormal = (1+hasilBNormal);
+            hasilIntent.putExtra("hasilBNormal5",hasilBNormal);
+
+
+        }else if (periksaAns == 35){
+            hasilBMerahHijau = (1+hasilBMerahHijau);
+            hasilIntent.putExtra("hasilBMerahHijau5", hasilBMerahHijau);
 
         }else {
-            pointHasil = 0;
-            hasilIntent.putExtra("pointHasil5", pointHasil);
+            hasilBTotal = (1+hasilBTotal);
+            hasilIntent.putExtra("hasilTotal5", hasilBTotal);
         }
         startActivity(hasilIntent);
         finish();

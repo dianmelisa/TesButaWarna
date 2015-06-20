@@ -45,16 +45,23 @@ public class MulaiActivity extends ActionBarActivity {
         EditText periksaAnsTxt = (EditText) findViewById(R.id.et);
 
         int periksaAns = Integer.valueOf(periksaAnsTxt.getText().toString());
+
         Intent hasilIntent = new Intent(this, Soal2.class);
-        int pointHasil;
+
+
+        int hasilBNormal = 0;
+        int hasilBMerahHijau = 0;
+        int hasilBTotal = 0;
 
         if (periksaAns == 12){
-            pointHasil = 1;
-            hasilIntent.putExtra("pointHasil1",pointHasil);
+            hasilBNormal = (1+ hasilBNormal);
+            hasilIntent.putExtra("hasilBNormal1",hasilBNormal);
 
         }else {
-            pointHasil = 0;
-            hasilIntent.putExtra("pointHasil1", pointHasil);
+            hasilBTotal = (1+hasilBTotal);
+            hasilBMerahHijau = (1 + hasilBMerahHijau);
+            hasilIntent.putExtra("hasilBTotal1", hasilBTotal);
+            hasilIntent.putExtra("hasilBMerahHijau1", hasilBMerahHijau);
         }
         startActivity(hasilIntent);
         finish();

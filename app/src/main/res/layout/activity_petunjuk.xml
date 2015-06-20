@@ -45,7 +45,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:id="@+id/txtArtikel" />
+                android:id="@+id/txtArtikel"
+                android:textColor="#000"/>
         </LinearLayout>
     </ScrollView>
 
@@ -56,6 +57,7 @@
         android:id="@+id/txtArtikel"
         android:layout_alignTop="@+id/scrollView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="102dp" />
+        android:layout_marginTop="102dp"
+        android:textColor="#000"/>
 
 </RelativeLayout>
