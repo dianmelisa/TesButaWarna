@@ -132,10 +132,7 @@ public class HasilActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void onClickBacktoMenu(View v){
-        Intent intentToMenu = new Intent(this, MainActivity.class);
-        startActivity(intentToMenu);
-    }
+    
 
 
 
